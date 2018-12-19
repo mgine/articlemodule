@@ -1,0 +1,105 @@
+.ws--location{
+	margin-top: 65px;
+  @media(max-width:480px){
+    margin-top: 35px;
+  }
+	.google-maps{
+		height: 430px;
+		@media(max-width:992px){
+			height: 220px;
+		}
+		.map-marker{
+			background-color:@orangeColor;
+			width: 250px;
+			padding:15px;
+			font-size: 15px;
+			letter-spacing: 1px;
+			&::after{
+				border-top: 8px solid @orangeColor;
+			}
+		}
+	}
+  .wp--title-section{
+    padding-bottom: 40px;
+  }
+}
+.ws--near-box{
+  width: 100%;
+  display: table;
+  table-layout: fixed; 
+  > div{
+    display: table-cell;
+    &.title{
+      vertical-align: middle;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      color:@textColor;
+      text-transform:uppercase; 
+      width: 262px;
+    }
+    &.desc{
+      padding: 40px 0 26px 40px;
+      background-color:@orangeColor;
+      color: #fff;
+      div{
+      	display: inline-block;
+      	float: left;
+      	width: 33.3%;
+      	padding-right: 60px;
+      	@media (max-width:1500px) {
+      		padding-right: 25px;
+      	}
+        @media(max-width:920px){
+          width: 50%;
+        }
+      }
+    }
+    @media(max-width:820px){
+      .wrapper;
+      &.title{
+        width:100%;
+        padding: 20px 5px;
+      }
+    }
+  }
+  table{
+  	width: 100%;
+  	border-collapse: collapse;
+  	td{
+  		font-size: 12px;
+  		font-weight:300;
+  		padding: 7px 0;
+  		vertical-align: middle;
+  		border-bottom:1px solid rgba(255, 255, 255, 0.15); 
+  		&.icon{
+  			border-bottom-color: transparent;
+  			padding-right: 7px;
+  		}
+  		&.distance{
+  			padding-right:30px;
+  			@media (max-width:1366px) {
+	      		padding-right: 20px;
+	      	} 
+  		}
+  	}
+  	tr:last-of-type td{
+  		border-bottom: none;
+  	}
+  }
+  .btn-default.white{
+  	.easy--in-out();
+  	background-color:transparent;
+  	color: #fff;
+  	font-size: 13px;
+  	font-weight: 300;
+  	padding-right: 5px;
+  	width: 100%;
+  	padding-left: 5px;
+  	border:2px solid #fff;
+  	&:hover, &:active, &:focus, &:active:focus{
+  		background-color: #fff;
+  		color:@textColor;
+  	}
+  }
+}

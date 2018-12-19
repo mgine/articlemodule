@@ -1,0 +1,206 @@
+.about {
+	&__container {
+		margin-top: 32px;
+                
+	    @media(max-width:992px) {
+	    	 margin-top: 5px;
+	    }
+	}
+	&__baner {
+		figure {
+			max-width: 100%;
+			display: block;
+		}
+	}
+	&__desc {
+		width: 60%;
+	    display: inline-block;
+	    float: left;
+	    margin-top: 55px;
+	    @media(max-width:780px) {
+	    	width: 100%;
+	    }
+	    @media(max-width:992px) {
+	    	 margin-top: 15px;
+	    }
+		span {
+		    font-size: 15px;
+		    color: #272626;
+		    line-height: 23px;
+		    font-weight: 300;
+		    display: block;
+		    padding: 22px 0px 12px;
+			strong {
+				font-weight: 400;
+			}
+                    @media(max-width:992px) {
+                            padding: 10px 0px 5px;
+                        }
+		}
+		&--finance {
+			margin-top: 32px; 
+			span > strong {
+				font-weight: 500;
+			}
+			.about__title {
+				margin-bottom: 0px;
+    			padding: 45px 0px 0px;
+			}
+			@media(max-width:930px) {
+		    	width: 100%;
+		    }
+		}
+	}
+	&__title {
+	    font-size: 32px;
+	    color: #f26c19;
+	    line-height: 38px;
+	    font-weight: 300;
+	    display: block;
+	    margin-bottom: 15px;
+		&--small {
+		    font-size: 24px;
+		    color: #f26c19;
+		    line-height: 38px;
+		    font-weight: 300;
+		    margin: 40px 0px 6px;
+		}
+	}
+	&__sidebar {
+		width: 40%;
+	    display: inline-block;
+	    float: left;
+	    padding: 0px 5px 0px 68px;
+	    @media(max-width:780px) {
+	    	width: 100%;
+	    	padding: 0px;
+	    }
+	}
+	&__quote {
+	    font-size: 20px;
+	    color: #272626;
+	    font-weight: 300;
+	    line-height: 28px;
+	    position: relative;
+	    display: block;
+	    margin-top: 165px;
+	    margin-bottom: 82px;
+            @media(max-width:992px) {
+                    margin-top: 95px;
+            }
+	    @media(max-width:780px) {
+	    	padding-left:40px;
+	    }
+		&:before{
+			content:'';
+			position: absolute;
+		    top: -57px;
+    		left: -47px;
+			background:url("@{images}/base/quote.png")no-repeat center;
+			width: 46px;
+			height: 37px;
+			display: block;
+			@media(max-width:780px) {
+				left:0px;
+			}
+		}
+	}
+	&__box {
+		display: block;
+    	margin-top: 50px;
+		h4 {
+			font-size: 18px;
+			color: @textColor;
+			line-height: 21px;
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+	&__finance {
+		width: 40%;
+	    display: inline-block;
+	    float: left;
+	    padding: 32px 20px 0px;
+	    @media(max-width:930px) {
+	    	width:100%;
+	    	padding: 32px 0px;
+	    }
+	    &--name {
+	    	font-size: 19px;
+	    	color: @textColor;
+	    	display: block;
+	    	padding-bottom: 40px;
+	    }
+	    .btn--orange {
+	    	width: 100%;
+	    	margin: 17px 0px 0px;
+	    }
+            .contact{
+                input, textarea{
+                    margin-bottom: 10px;
+                    border: 2px solid #b5b3b2;
+                }
+            }
+            .contact__container {
+                background: #f1efed;
+            }
+	}
+}
+.tabs-box {
+	display: block;
+	margin-top: 75px;
+	.wrapper;
+	li {
+		display: block;
+		width: 100%;
+		&:last-child {
+			a {
+				border:none;
+			}
+			&:hover {
+				a {
+					border-bottom: none;
+				}
+			}
+		}
+		&:hover {
+			a {
+				border-bottom: 1px solid #cccccc;
+			}
+		}
+		a {
+			padding: 20px 60px;
+			display: block;
+			color: #333333;
+			font-size: 16px;
+			border-bottom: 1px solid #e1e1e1;
+			text-decoration:none;
+
+			&.calc {
+				background:url("@{images}/base/calc.png")no-repeat center left;
+			}
+			&.change {
+				background:url("@{images}/base/finance--icon-old-new.png")no-repeat center left;
+			}
+			&.money {
+				background:url("@{images}/base/finance--icon-bridge-loan.png")no-repeat center left;
+			}
+			&.quitters {
+				background:url("@{images}/base/finance--icon-quitters.png")no-repeat center left;
+			}
+			&.program {
+				background:url("@{images}/base/finance--icon-program.png")no-repeat center left;
+			}
+			&.partnesr {
+				background:url("@{images}/base/finance--icon-partners.png")no-repeat 6px center;
+			}
+		}
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 300;
+		color: #444444;
+    	padding-bottom: 40px;
+		text-align: center;
+	}
+}

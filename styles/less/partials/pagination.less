@@ -1,0 +1,28 @@
+.pagination {
+	display: block;
+	padding: 63px 0px 0px;
+        @media(max-width: 992px){
+                padding: 33px 0 0;
+        }
+	li {
+		display: inline-block;
+                height: 50px;
+		a{
+			color: @textColor;
+                        background-color: #e3e3e3;
+			font-size: 14px;
+			border: 2px solid transparent;
+			padding: 12px 15px 10px;
+			text-align: center;
+			cursor: pointer;
+			text-decoration: none;
+			&:not(.dot).active, &:not(.dot):hover {
+				color: white;
+                                background-color: @orangeColor;
+			}
+			&.dot {
+				padding: 11px 0px;
+			}
+		}
+	}
+}

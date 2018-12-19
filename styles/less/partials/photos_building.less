@@ -1,0 +1,62 @@
+.photos--building{
+	figure{
+		display: inline-block;
+		float: left;
+		padding: 5px;
+		height:174px;
+		width: 25%;
+		overflow: hidden;
+		@media(max-width:992px){
+			width: 30%;
+		}
+		@media(max-width:500px){
+			width: 50%;
+		}
+		@media(max-width:420px){
+			width: 100%;
+		}
+		a{
+			.wrapper;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover!important;
+			position: relative;
+			&::before{
+		    	background-color:rgba(0,0,0,0.37);
+		        position: absolute;
+		        left:0;
+		        top: 0;
+		        width: 100%;
+		        height: 100%;
+		        display: block;
+		        width: 100%;
+		        height: 100%;
+		        opacity: 0;
+		        content: '';
+		    }
+		    &::after{
+		        display: block;
+		        width: 21px;
+		        height: 40px;
+		        .box--center-center;
+		        content: '';
+		        opacity: 0;
+		        position: absolute;
+		        background:url("@{images}/base/arrow--orange.png")no-repeat center;
+		    }
+		    &:hover{
+		        &::before{
+		          opacity: 1;
+		        }
+		        &::after{
+		          opacity: 1;
+		          margin-top: auto;
+		        }
+		    }
+		}
+	}
+	.wp--title-section{
+		padding: 40px 5px;
+	}
+}
