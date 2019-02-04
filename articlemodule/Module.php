@@ -11,9 +11,9 @@ class Module
     {
         $application         = $e->getApplication();
 
-        $eventManager        = $application->getEventManager();
+        $eventManagers        = $application->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
+        $moduleRouteListener->attach($eventManagers);
 
     }
 
