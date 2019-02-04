@@ -16,7 +16,6 @@ class Module
         $moduleRouteListener->attach($eventManager);
 
         $servicem = $e->getApplication()->getServiceManager();
-//        $eventManager->attachAggregate($servicem->get('SubscriptionListener'));
 
     }
 
