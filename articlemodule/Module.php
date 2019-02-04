@@ -15,8 +15,6 @@ class Module
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
 
-        $servicem = $e->getApplication()->getServiceManager();
-
     }
 
     public function getConfig()
